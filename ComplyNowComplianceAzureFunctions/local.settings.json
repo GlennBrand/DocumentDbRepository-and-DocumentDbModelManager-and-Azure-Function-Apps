@@ -1,0 +1,11 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "AzureWebJobsDashboard": "",
+    "docdb.endpoint": "https://complynowsqldocumentdb.documents.azure.com:443/",
+    "docdb.auth": "qKeCSXNdFNKq34Dyc3w4waXgANMNLKGlXtBAKXnQNfhFlXhVsy5kiHSDGkrSvt6Uc3ByIK6liRJY6PuQhOJPBA==",
+    "docdb.database": "ComplyNowDb",
+    "DeviceCollection": "Devices"
+  }
+}

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>    
+    <PackageReference Include="Microsoft.AspNet.WebApi.Tracing" Version="5.2.3" />    
+    <PackageReference Include="Microsoft.Azure.DocumentDB" Version="1.19.1" />    
+    <PackageReference Include="Microsoft.Azure.Graphs" Version="0.3.1-preview" />    
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.7" />    
+    <PackageReference Include="Mono.CSharp" Version="4.0.0.143" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComplyNowDocumentDbModelManager\ComplyNowDocumentDbModelManager.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>
